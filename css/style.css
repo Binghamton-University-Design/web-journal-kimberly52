@@ -1,1 +1,10 @@
 /*stylesheet*/
+h1{
+	font font-size: 48px;
+}
+
+h1.alternate {
+	color: hotpink;
+	font-family: sans-serif;
+	font-size: 70px;
+}/*stylesheet*/
