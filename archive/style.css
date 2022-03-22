@@ -1,27 +1,37 @@
-/*stylesheet*/
-
-/* vars */
 :root {
-  --background-color: #333;
-  --black-color: #000;
-  --body-color: #fff;
+  --background-color: #4B0082;
+  --body-color: #f5dddd;
 }
 
 body {
   margin: 0;  
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  color:  var(--body-color);
-  background-color: var(--background-color);
+  background: #0D3BE8;
+  color: white;
 }
 
 h1, h2, h3, h4, p {
   margin-top: 0;
   margin-bottom: 1em;
+  font-family: "Raleway"
 }
 
-h1, h2 {
-  font-weight: 700;
+h1{
+	font-weight: 700;
+	color: white;
+}
+
+h2, h3{
+  color: var(--body-color);
+}
+
+h4 {
+  color: var(--background-color);
+}
+
+p{
+  color: #332735;
 }
 
 #wrapper {
@@ -93,20 +103,11 @@ h1, h2 {
   display: flex;
   align-items: center;
   height: 70vh;
-  background-color: green;
-}
-
-#intro-holder {
-  background-color: hotpink;
-  text-align: center;
-}
-
-#intro-holder h1 {
-  margin-bottom: 0;
+  width: 100%;
 }
 
 #work h3, #page h3 {
-  font-weight: 600;
+
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
@@ -123,11 +124,10 @@ h1, h2 {
 }
 
 .work-item .inner .work-inside {
-  color: var(--body-color);
-  aspect-ratio: 4/3;
+  color: #fff;
   padding: 2rem;
   width: 100%;
-  background-color: var(--black-color);
+  background-color: var(--body-color);
   text-align: right;
 }
 
@@ -142,15 +142,7 @@ h1, h2 {
 .work-item img {
   display: block;
   width: 100%;
-}
-
-.work-item .work-image {
-  aspect-ratio: 1 / 1;
-}
-
-.work-item .work-image img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: auto;
 }
 
 /* PAGE */
@@ -255,6 +247,5 @@ h1, h2 {
 
   body {
     font-size: 18px;
+    
   }
-
-}
